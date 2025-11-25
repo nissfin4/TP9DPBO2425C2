@@ -9,3 +9,7 @@ Struktur program mengikuti pola MVP. Bagian Model bertanggung jawab untuk semua 
 Fitur CRUD pada kedua tabel sudah berjalan lengkap. Pengguna bisa melakukan CRUD. Semua fitur ini tersedia untuk tabel Pembalap maupun tabel Acara. Hanya isi datanya saja yang berbeda, tapi alurnya sama.
 
 folder yang dibagi berdasarkan komponen MVP yaitu folder models untuk semua class dan query, folder views untuk tampilan, folder presenters untuk penghubung antara View dan Model, serta folder kontrak yang berisi interface.
+
+Dokumentasi Video Youtube:
+[![Tonton video](https://img.youtube.com/vi/Gy9_t8M694E/0.jpg)](https://www.youtube.com/watch?v=Gy9_t8M694E)
+
