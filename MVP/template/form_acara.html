@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Form Acara</title>
+  <style>
+    :root{
+      --bg: #f7f8fb;
+      --card: #ffffff;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --danger: #ef4444;
+      --border: #e6e9ef;
+      --radius: 8px;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    html,body{height:100%;margin:0;background:var(--bg);}
+    .container{max-width:700px;margin:36px auto;padding:18px;}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:18px}
+    h1{margin:0 0 8px;font-size:18px}
+    p.lead{margin:0 0 16px;color:var(--muted);font-size:13px}
+
+    form{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+    input[type="text"], input[type="number"], input[type="date"]{
+      width:100%;padding:10px;border:1px solid var(--border);border-radius:6px;font-size:14px;
+    }
+
+    .full{grid-column:1/-1}
+    .actions{display:flex;gap:10px;justify-content:flex-end;margin-top:8px}
+    .btn{padding:10px 14px;border-radius:8px;border:1px solid transparent;font-size:14px;cursor:pointer}
+    .btn-primary{background:var(--accent);color:#fff}
+    .btn-muted{background:transparent;border:1px solid var(--border);color:var(--muted)}
+
+    /* === Tombol Back (DARI SINI) === */
+    .btn-back{
+      display:inline-block;
+      margin:8px 0 12px 0;
+      padding:8px 10px;
+      background:#6b7280;
+      color:#fff;
+      border-radius:6px;
+      text-decoration:none;
+      font-size:13px;
+    }
+    .btn-back:hover{ opacity:0.95; }
+    /* === SAMPAI SINI === */
+
+    @media (max-width:640px){
+      form{grid-template-columns:1fr}
+      .actions{justify-content:space-between}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+
+      <!-- Tombol kembali -->
+      <a href="acara.php" class="btn-back">← Kembali</a>
+
+      <h1>Form Acara Balapan</h1>
+
+      <form method="post" action="acara.php" novalidate data-form="acara">
+        <input type="hidden" name="action" value="add" id="acara-action" data-field>
+        <input type="hidden" name="id" value="" id="acara-id" data-field>
+
+        <div>
+          <label for="nama_acara">Nama Acara</label>
+          <input id="nama_acara" name="nama_acara" type="text" placeholder="Nama acara" required data-field>
+        </div>
+
+        <div>
+          <label for="lokasi">Lokasi</label>
+          <input id="lokasi" name="lokasi" type="text" placeholder="Lokasi acara" required data-field>
+        </div>
+
+        <div>
+          <label for="tanggal">Tanggal</label>
+          <input id="tanggal" name="tanggal" type="date" required data-field>
+        </div>
+
+        <div>
+          <label for="jumlah_lap">Jumlah Lap</label>
+          <input id="jumlah_lap" name="jumlah_lap" type="number" min="1" step="1" placeholder="0" data-field>
+        </div>
+
+        <div class="full actions">
+          <a href="acara.php" class="btn btn-muted">Batal</a>
+          <button type="submit" class="btn btn-primary">Simpan</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
