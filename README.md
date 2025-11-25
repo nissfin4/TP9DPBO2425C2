@@ -12,4 +12,5 @@ folder yang dibagi berdasarkan komponen MVP yaitu folder models untuk semua clas
 
 Dokumentasi Video Youtube:
 [![Tonton video](https://img.youtube.com/vi/Gy9_t8M694E/0.jpg)](https://www.youtube.com/watch?v=Gy9_t8M694E)
+[![Tonton Video](https://img.youtube.com/vi/TgUAswJ1YM4/0.jpg)](https://www.youtube.com/watch?v=TgUAswJ1YM4)
 
