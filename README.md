@@ -1,6 +1,6 @@
 # TP9DPBO2425C2
 Tugas Praktikum 9
-Janji:
+Janji: Saya Nisrina Safinatunnajah dengan NIM 2410093 mengerjakan Tugas Praktikum 9 dalam mata kuliah DPBO untuk keberkahanNya maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan. Aamiin.
 
 Di dalam program ini ada dua bagian utama yaitu CRUD untuk data Pembalap dan CRUD untuk data Acara. Tabel Acara dipilih sebagai tabel tambahan karena masih berhubungan dengan dunia balapan.
 
